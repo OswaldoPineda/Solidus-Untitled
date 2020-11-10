@@ -1,0 +1,18 @@
+$font-stack: 'Lato';
+
+.taxonomies-container {
+  margin: 0 28px;
+
+  &__title {
+    font-family:  $font-stack;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,56 @@
+@import '../.././styles/main.scss';
+
+.taxonomy {
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  height: 77px;
+  text-decoration: none;
+  width: 48%;
+
+  @media screen and (min-width: 700px) {
+    height: 150px;
+  }
+
+  &:first-child {
+    background-image: url('https://cdn.shopify.com/s/files/1/0258/2999/8641/files/IMG_4235.jpg');
+    margin-bottom: 12px;
+  }
+
+  &:nth-child(2) {
+    background-image: url('https://cdn.shopify.com/s/files/1/0258/2999/8641/files/IMG_4171.jpg');
+  }
+
+  &:nth-child(3) {
+   background-image: url('https://cdn.shopify.com/s/files/1/0258/2999/8641/files/SPSU20-NAV-HEADWEAR.jpg');
+  }
+
+  &:last-child {
+    background-image: url('https://cdn.shopify.com/s/files/1/0258/2999/8641/files/imagen_2020-11-12_012556.png');
+  }
+
+  &:hover {
+    h1{
+      font-size: 15px;
+      transition: all .75s;
+
+      @media screen and (min-width: 700px) {
+        font-size: 26px;
+      }
+    }
+  }
+
+  &__title {
+    color: $white;
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 58px;
+    text-align: center;
+
+    @media screen and (min-width: 700px) {
+      font-size: 24px;
+      line-height: 125px;
+    }
+  }
+}
