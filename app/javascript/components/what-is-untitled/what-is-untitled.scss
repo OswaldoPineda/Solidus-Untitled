@@ -1,0 +1,41 @@
+@import '../../styles/main.scss';
+
+.what-is-untitled {
+  padding: 0 28px;
+
+  &__title {
+    color: $main-text-color;
+    font-family: $font-stack;
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .about-container {
+    &__image {
+      width: 146px;
+      height: 146px;
+      border-radius: 8px;
+      float: left;
+      margin-right: 10px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        width: 210px;
+        height: 210px;
+      }
+    }
+
+    &__text {
+      color: $main-text-color;
+      font-family: $font-stack;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: justify;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 16px;
+      }
+    }
+  }
+}
