@@ -1,0 +1,135 @@
+ @import '../.././styles/main.scss';
+
+.content {
+  grid-row-gap: 25px;
+
+  &__desktop {
+    @media only screen and (min-width: 700px) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 28px;
+      width: 100%;
+   }
+  }
+}
+
+.footer__logo {
+  height: 51px;
+  width: 234px;
+}
+
+.footer {
+  background: $black;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0;
+  padding: 18px 0 7px;
+
+  &__logo-anchor {
+    @media only screen and (min-width: $breakpoint-tablet) {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin: 80px 70px 75px 70px;
+    }
+  }
+
+  &__information {
+    padding: 0;
+  }
+
+  &__contact {
+    padding: 0;
+  }
+
+  &__information-heading {
+    border-bottom: 2px solid $yellow;
+    padding-bottom: 6px;
+    font-size: 25px;
+    font-family: $font-stack;
+  }
+
+  &__information-list-father {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__information-list-child {
+      a {
+        color: $white;
+        font-family: $font-stack;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none;
+      }
+
+      &:nth-child(2) {
+        margin: 15px 0px;
+      }
+
+      &:nth-child(3) {
+        margin: 15px 0px;
+      }
+    }
+
+  &__contact-heading {
+    border-bottom: 2px solid $yellow;
+    font-family: $font-stack;
+    font-size: 25px;
+    padding-bottom: 6px;
+  }
+
+  &__contact-list-father {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__contact-list-child {
+    a {
+      color: $white;
+      font-family: $font-stack;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1;
+      text-decoration: none;
+    }
+
+    &:nth-child(2) {
+      margin: 15px 0px;
+    }
+  }
+
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    .icon {
+      height: 22px;
+      width: 22px;
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__copyright {
+      color: $white;
+    font-family: $font-stack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
