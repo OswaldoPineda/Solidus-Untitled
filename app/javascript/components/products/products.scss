@@ -1,0 +1,32 @@
+@import '../.././styles/main.scss';
+
+.products-section {
+  margin: 0 28px;
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.products-header {
+  align-items: baseline;
+  display: flex;
+
+  &__title {
+    color: $black;
+    font-family: $font-stack;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+  &__subtitle {
+    color: $grey;
+    font-family: $font-stack;
+    font-size: 14px;
+    margin-left: 18px;
+  }
+}
