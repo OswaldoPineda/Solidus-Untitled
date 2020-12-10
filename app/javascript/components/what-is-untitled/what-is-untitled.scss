@@ -12,14 +12,19 @@
   }
 
   .about-container {
+    @media only screen and (min-width: $breakpoint-tablet) {
+      display: flex;
+    }
+
     &__image {
-      width: 146px;
-      height: 146px;
       border-radius: 8px;
       float: left;
+      height: 146px;
       margin-right: 10px;
+      width: 146px;
 
-      @media screen and (min-width: $breakpoint-tablet) {
+      @media only screen and (min-width: $breakpoint-tablet) {
+        float: unset;
         width: 210px;
         height: 210px;
       }
