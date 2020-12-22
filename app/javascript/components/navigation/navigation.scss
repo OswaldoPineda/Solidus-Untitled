@@ -1,0 +1,68 @@
+@import '../.././styles/main.scss';
+
+%icon-size {
+  background-size: cover;
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  width: 32px;
+
+  @media only screen and(min-width: $breakpoint-tablet) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.navigation {
+  background-color: black;
+  display: flex;
+  height: 43px;
+  justify-content: space-between;
+  max-width: 1100px;
+  padding-top: 10px;
+  position: fixed;
+  transition: all ease .75s;
+  width: 100%;
+  z-index: 100;
+
+  &.is-on-top {
+    position: absolute;
+    background-color: unset;
+  }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    align-items: center;
+    height: 60px;
+    padding-top: 0;
+  }
+
+  &__icon-menu {
+    @extend %icon-size;
+    background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/open-menu_3x_4c73c15d-f78e-43e2-9240-5aa57f909170.png");
+    margin-left: 20px;
+
+    @media only screen and(min-width: $breakpoint-tablet) {
+      margin-left: 40px;
+    }
+  }
+
+  &__icon-logo {
+    @extend %icon-size;
+    background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/ICON_3x_2cb7c09d-e30c-485e-89eb-b0abdef87533.png");
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      height: 45px;
+      width: 45px;
+    }
+  }
+
+  &__icon-cart {
+    @extend %icon-size;
+    background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/supermarket_3x_7bb0637d-974e-4a98-87db-b5877fbb4bb2.png");
+    margin-right: 20px;
+
+    @media only screen and(min-width: $breakpoint-tablet) {
+      margin-right: 40px;
+    }
+  }
+}
