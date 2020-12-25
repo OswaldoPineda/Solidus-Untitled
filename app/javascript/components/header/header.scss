@@ -1,0 +1,35 @@
+@import '../.././styles/main.scss';
+
+.header-content {
+  align-items: center;
+  background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/IMG_4171.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: revert;
+  display: flex;
+  height: 210.9px;
+  justify-content: center;
+  width: 100%;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/IMG_4171.jpg");
+    background-position: center;
+    height: 560px;
+  }
+
+  &__title {
+    color: $white;
+    font-family: $lato-font;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    line-height: 1.2;
+    opacity: 0.7;
+    text-transform: uppercase;
+
+    @media only screen and(min-width:$breakpoint-tablet) {
+      font-size: 70px;
+      letter-spacing: 16px;
+    }
+  }
+}
