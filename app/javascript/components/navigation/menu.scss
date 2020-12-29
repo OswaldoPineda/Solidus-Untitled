@@ -1,0 +1,116 @@
+@import '../.././styles/main.scss';
+
+.menu {
+  background-color: $black;
+  height: 100%;
+  left: -500px;
+  position: fixed;
+  transition: all ease 1s;
+  width: 80%;
+  z-index: 1000;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    left: -1100px;
+  }
+
+  &.active {
+    left: 0;
+    transition: all ease 1s;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 16px;
+
+    &__logo {
+      height: 26px;
+      width: 120px;
+
+      @media only screen and (min-width: $breakpoint-tablet) {
+        height: 53px;
+        width: 260px;
+      }
+    }
+
+    &__close {
+      cursor: pointer;
+      width: 20px;
+
+      @media only screen and (min-width: $breakpoint-tablet) {
+        width: 32px;
+      }
+    }
+  }
+
+  &-categories {
+    color:$white;
+    font-family: $font-stack;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.8;
+    list-style: none;
+    padding-left: 36px;
+    text-decoration: none;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      transition: all ease .4s;
+    }
+
+    a:hover {
+      border-left: 7px solid $yellow;
+      padding-left: 5px;
+
+    }
+
+    @media only screen and (min-width: $breakpoint-tablet) {
+      font-size: 28px;
+      padding-left: 112px;
+    }
+  }
+
+  &-footer {
+    &__slogan{
+      border-bottom: 1px solid $yellow;
+      border-top: 1px solid $yellow;
+      color: white;
+      font-family: $font-stack;
+      font-weight: 900;
+      letter-spacing: 4px;
+      padding: 10px;
+      text-align: center;
+
+      @media only screen and (min-width: $breakpoint-tablet) {
+        font-size: 28px;
+      }
+    }
+
+    &-icons {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__facebook {
+      height: 22px;
+      margin-right: 40px;
+      width: 22px;
+
+      @media only screen and (min-width: $breakpoint-tablet) {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    &__instagram {
+      height: 22px;
+      width: 22px;
+
+      @media only screen and (min-width: $breakpoint-tablet) {
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+}
