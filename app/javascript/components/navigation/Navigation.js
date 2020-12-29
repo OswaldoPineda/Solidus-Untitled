@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './navigation';
-
+import Menu from './Menu';
 const Navigation = () => {
   const [isOnTopClass, setIsOnTopClass] = useState('is-on-top');
+  const [menuClass, setMenuClass] = useState('');
   const navClasses = `navigation ${isOnTopClass}`;
 
   useEffect(() => {
@@ -16,11 +17,14 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={navClasses}>
-      <i className="navigation__icon-menu" />
-      <i className="navigation__icon-logo" />
-      <i className="navigation__icon-cart" />
-    </nav>
+    <>
+      <Menu extraClass={menuClass} setMenuClass={setMenuClass} />
+      <nav className={navClasses}>
+        <i className="navigation__icon-menu" onClick={() => setMenuClass('active')} />
+        <i className="navigation__icon-logo" />
+        <i className="navigation__icon-cart" />
+      </nav>
+    </>
   );
 };
 

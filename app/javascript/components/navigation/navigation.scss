@@ -26,8 +26,8 @@
   z-index: 100;
 
   &.is-on-top {
-    position: absolute;
     background-color: unset;
+    position: absolute;
   }
 
   @media only screen and (min-width: $breakpoint-tablet) {
@@ -48,7 +48,7 @@
 
   &__icon-logo {
     @extend %icon-size;
-    background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/ICON_3x_2cb7c09d-e30c-485e-89eb-b0abdef87533.png");
+    background-image: url("https://cdn.shopify.com/s/files/1/0258/2999/8641/files/icono-nuevo.jpg");
 
     @media only screen and (min-width: $breakpoint-tablet) {
       height: 45px;
