@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   margin: 24px 0 0;
-  padding: 18px 0 7px;
+  padding: 18px 0 15px;
 
   &__logo-anchor {
     @media only screen and (min-width: $breakpoint-tablet) {
@@ -80,6 +80,10 @@
     font-family: $font-stack;
     font-size: 25px;
     padding-bottom: 6px;
+
+    @media only screen and (min-width: $breakpoint-laptop) {
+      width: max-content;
+    }
   }
 
   &__contact-list-father {
